@@ -253,7 +253,7 @@ function getInitialTheme() {
     return savedTheme;
   }
 
-  return window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark";
+  return "dark";
 }
 
 export default function App() {
@@ -366,9 +366,11 @@ export default function App() {
 
   return (
     <div className="site-shell">
-      {/* Background ambient glow effects */}
-      <div className="ambient-glow ambient-glow-top" aria-hidden="true" />
-      <div className="ambient-glow ambient-glow-middle" aria-hidden="true" />
+      {/* Dynamic colorful ambient glow orbs */}
+      <div className="ambient-glow ambient-glow-1" aria-hidden="true" />
+      <div className="ambient-glow ambient-glow-2" aria-hidden="true" />
+      <div className="ambient-glow ambient-glow-3" aria-hidden="true" />
+      <div className="ambient-glow ambient-glow-4" aria-hidden="true" />
 
       <header className="site-header">
         <a className="brand-mark" href="#home" aria-label="Muhammad Ahmad home">
