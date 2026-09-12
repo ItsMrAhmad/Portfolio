@@ -13,6 +13,7 @@ import {
   Github,
   Globe,
   GraduationCap,
+  Headphones,
   Layers3,
   Linkedin,
   Mail,
@@ -39,8 +40,8 @@ const profile = {
   companyUrl: "https://techsistlabs.com",
   tagline:
     "Managing Director (Remote) at Techsist Labs & Full Stack Developer engineering scalable, high-performance web products and cloud solutions.",
-  location: "Lahore, Pakistan · Brisbane, Australia (Remote)",
-  timezone: "PKT (GMT+5) · AEST (GMT+10)",
+  location: "Lahore, Pakistan",
+  timezone: "PKT (GMT+5)",
   email: "me.ahmadasghar@gmail.com",
   secondaryEmail: "me@ahmadasghar.com",
   phone: "+92 324 9387047",
@@ -48,7 +49,7 @@ const profile = {
   linkedin: "https://www.linkedin.com/in/muhammad-ahmad025/",
   website: "https://its-mr-ahmad.vercel.app",
   about:
-    "Full Stack Developer and Managing Director at Techsist Labs (Brisbane, Australia), working remotely across global timezones. BSCS graduate from Lahore Garrison University with extensive experience building production-grade web applications, responsive user interfaces, modular REST APIs, and resilient database architectures. Focused on delivering high-impact digital solutions that combine modern engineering standards with exceptional user experiences.",
+    "Full Stack Developer and Managing Director at Techsist Labs (Brisbane, Australia), working remotely from Lahore, Pakistan. BSCS graduate from Lahore Garrison University with extensive experience building production-grade web applications, responsive user interfaces, modular REST APIs, and resilient database architectures. Focused on delivering high-impact digital solutions that combine modern engineering standards with exceptional user experiences.",
   education: "Bachelor of Science in Computer Science (BSCS) — Lahore Garrison University"
 };
 
@@ -64,12 +65,22 @@ const experienceList = [
   {
     role: "Managing Director (Remote) & Full Stack Lead",
     company: "Techsist Labs",
-    location: "Brisbane, Australia",
+    location: "Brisbane, Australia (Remote)",
     url: "https://techsistlabs.com",
     period: "May 2026 – Present",
     type: "Leadership & Engineering",
     description:
       "Directing technical operations and digital product development. Architecting high-speed Next.js and full-stack web applications, leading international client solutions, and overseeing cloud hosting, AI automations, and modern web architectures."
+  },
+  {
+    role: "Customer Services Representative & Developer",
+    company: "SMP Solutions Inc",
+    location: "Remote",
+    url: "https://smpsolutionsinc.com/",
+    period: "2023 – 2026",
+    type: "Support & Development",
+    description:
+      "Managed customer support and client communications while developing technical web solutions, internal operational tools, and automated customer service workflows for SMP Solutions Inc."
   },
   {
     role: "Full Stack Web Developer (Freelance)",
@@ -237,10 +248,10 @@ const projects = [
 ];
 
 const stats = [
-  { value: "MD @ Techsist", label: "Leadership & Dev" },
-  { value: "Full Stack", label: "MERN & Next.js" },
-  { value: "BSCS", label: "Academic Degree" },
-  { value: "PKT / AEST", label: "Global Availability" }
+  { value: "Full Stack", label: "Core Specialization" },
+  { value: "Director", label: "Techsist Labs" },
+  { value: "BSCS", label: "Computer Science" },
+  { value: "3+ Years", label: "Professional Exp" }
 ];
 
 function getInitialTheme() {
@@ -273,35 +284,35 @@ export default function App() {
         value: profile.email,
         href: `mailto:${profile.email}`,
         icon: Mail,
-        subtext: "Best for quick replies"
+        subtext: "Best for direct replies"
       },
       {
         label: "Domain Email",
         value: profile.secondaryEmail,
         href: `mailto:${profile.secondaryEmail}`,
         icon: Mail,
-        subtext: "Direct business inquiries"
+        subtext: "Business inquiries"
+      },
+      {
+        label: "LinkedIn",
+        value: "in/muhammad-ahmad025",
+        href: profile.linkedin,
+        icon: Linkedin,
+        subtext: "Connect professionally"
+      },
+      {
+        label: "GitHub",
+        value: "ItsMrAhmad",
+        href: profile.github,
+        icon: Github,
+        subtext: "Code repositories & work"
       },
       {
         label: "Phone / WhatsApp",
         value: profile.phone,
         href: "tel:+923249387047",
         icon: Phone,
-        subtext: "Call or text"
-      },
-      {
-        label: "GitHub",
-        value: "github.com/ItsMrAhmad",
-        href: profile.github,
-        icon: Github,
-        subtext: "Open source code & repos"
-      },
-      {
-        label: "LinkedIn",
-        value: "muhammad-ahmad025",
-        href: profile.linkedin,
-        icon: Linkedin,
-        subtext: "Connect professionally"
+        subtext: "Call or WhatsApp message"
       },
       {
         label: "Company",
@@ -387,6 +398,26 @@ export default function App() {
 
         <div className="header-actions">
           <a
+            className="icon-button header-social-link"
+            href={profile.github}
+            target="_blank"
+            rel="noreferrer"
+            aria-label="GitHub ItsMrAhmad"
+            title="GitHub: ItsMrAhmad"
+          >
+            <Github size={17} />
+          </a>
+          <a
+            className="icon-button header-social-link"
+            href={profile.linkedin}
+            target="_blank"
+            rel="noreferrer"
+            aria-label="LinkedIn Profile"
+            title="LinkedIn: muhammad-ahmad025"
+          >
+            <Linkedin size={17} />
+          </a>
+          <a
             className="header-cta"
             href="#contact"
             onClick={() => setMenuOpen(false)}
@@ -400,7 +431,7 @@ export default function App() {
             aria-label={`Switch to ${theme === "dark" ? "light" : "dark"} theme`}
             title={`Switch to ${theme === "dark" ? "light" : "dark"} theme`}
           >
-            {theme === "dark" ? <Sun size={18} /> : <Moon size={18} />}
+            {theme === "dark" ? <Sun size={17} /> : <Moon size={17} />}
           </button>
           <button
             className="icon-button menu-button"
@@ -409,7 +440,7 @@ export default function App() {
             aria-label="Toggle navigation"
             aria-expanded={menuOpen}
           >
-            {menuOpen ? <X size={19} /> : <Menu size={19} />}
+            {menuOpen ? <X size={18} /> : <Menu size={18} />}
           </button>
         </div>
       </header>
@@ -420,11 +451,11 @@ export default function App() {
           <div className="hero-copy">
             <div className="hero-badge-wrap">
               <span className="eyebrow">
-                <MapPin size={15} />
+                <MapPin size={14} />
                 {profile.location}
               </span>
               <span className="timezone-tag">
-                <Radio size={13} className="live-dot-icon" />
+                <Radio size={12} className="live-dot-icon" />
                 {profile.timezone}
               </span>
             </div>
@@ -441,11 +472,11 @@ export default function App() {
 
             <div className="hero-actions">
               <a className="button button-primary" href="#projects">
-                <Rocket size={18} />
+                <Rocket size={17} />
                 Explore Projects
               </a>
               <a className="button button-secondary" href="#contact">
-                <Send size={18} />
+                <Send size={17} />
                 Contact Me
               </a>
               <a
@@ -454,9 +485,32 @@ export default function App() {
                 target="_blank"
                 rel="noreferrer"
               >
-                <Building2 size={18} />
+                <Building2 size={17} />
                 Techsist Labs
-                <ArrowUpRight size={15} />
+                <ArrowUpRight size={14} />
+              </a>
+            </div>
+
+            <div className="hero-social-strip">
+              <a
+                href={profile.linkedin}
+                target="_blank"
+                rel="noreferrer"
+                className="hero-social-link"
+                title="LinkedIn Profile"
+              >
+                <Linkedin size={15} />
+                <span>LinkedIn</span>
+              </a>
+              <a
+                href={profile.github}
+                target="_blank"
+                rel="noreferrer"
+                className="hero-social-link"
+                title="GitHub: ItsMrAhmad"
+              >
+                <Github size={15} />
+                <span>GitHub (ItsMrAhmad)</span>
               </a>
             </div>
 
@@ -477,7 +531,7 @@ export default function App() {
             </div>
             <div className="availability-pill">
               <span className="pulsing-dot" />
-              <span>Available for high-impact projects & consultations</span>
+              <span>Available for high-impact projects</span>
             </div>
           </div>
         </section>
@@ -493,7 +547,7 @@ export default function App() {
               <p className="section-copy">{profile.about}</p>
               <div className="about-highlight-box">
                 <div className="highlight-item">
-                  <Globe size={20} className="highlight-icon" />
+                  <Globe size={18} className="highlight-icon" />
                   <div>
                     <h4>Global Remote Operations</h4>
                     <p>
@@ -503,7 +557,7 @@ export default function App() {
                   </div>
                 </div>
                 <div className="highlight-item">
-                  <Sparkles size={20} className="highlight-icon" />
+                  <Sparkles size={18} className="highlight-icon" />
                   <div>
                     <h4>End-to-End Delivery</h4>
                     <p>
@@ -517,10 +571,10 @@ export default function App() {
 
             <div className="executive-card">
               <div className="executive-card-header">
-                <Building2 size={24} className="exec-icon" />
+                <Building2 size={22} className="exec-icon" />
                 <div>
                   <h3>Techsist Labs</h3>
-                  <span className="exec-badge">Current Venture</span>
+                  <span className="exec-badge">Managing Director</span>
                 </div>
               </div>
               <p className="exec-text">
@@ -529,14 +583,14 @@ export default function App() {
                 delivery.
               </p>
               <div className="exec-footer">
-                <span className="exec-time">May 2026 – Present</span>
+                <span className="exec-time">May 2026 – Present · Brisbane, Australia</span>
                 <a
                   href={profile.companyUrl}
                   target="_blank"
                   rel="noreferrer"
                   className="exec-link"
                 >
-                  Visit techsistlabs.com <ArrowUpRight size={15} />
+                  Visit techsistlabs.com <ArrowUpRight size={14} />
                 </a>
               </div>
             </div>
@@ -547,7 +601,7 @@ export default function App() {
         <section className="section-pad content-section" id="experience">
           <div className="section-heading wide-heading">
             <span className="section-kicker">Career Timeline</span>
-            <h2>Experience & Leadership</h2>
+            <h2>Experience & Work History</h2>
           </div>
 
           <div className="experience-timeline">
@@ -556,7 +610,7 @@ export default function App() {
                 <div className="exp-meta">
                   <span className="exp-type-tag">{exp.type}</span>
                   <span className="exp-period">
-                    <Calendar size={14} />
+                    <Calendar size={13} />
                     {exp.period}
                   </span>
                 </div>
@@ -571,14 +625,14 @@ export default function App() {
                         rel="noreferrer"
                         className="exp-company-link"
                       >
-                        {exp.company} <ExternalLink size={14} />
+                        {exp.company} <ExternalLink size={13} />
                       </a>
                     ) : (
                       <span className="exp-company-static">{exp.company}</span>
                     )}
                   </div>
                   <div className="exp-location">
-                    <MapPin size={13} />
+                    <MapPin size={12} />
                     {exp.location}
                   </div>
                   <p className="exp-description">{exp.description}</p>
@@ -602,7 +656,7 @@ export default function App() {
           {/* VISUAL TECH STACK BADGES (from user screenshot) */}
           <div className="tech-badge-showcase">
             <div className="badge-showcase-title">
-              <Terminal size={17} />
+              <Terminal size={16} />
               <span>Core Tech Stack Badges</span>
             </div>
             <div className="badge-flow-container">
@@ -629,14 +683,14 @@ export default function App() {
                 <article className="skill-card" key={group.title}>
                   <div className="skill-heading">
                     <span className="skill-icon">
-                      <Icon size={20} />
+                      <Icon size={18} />
                     </span>
                     <h3>{group.title}</h3>
                   </div>
                   <ul>
                     {group.skills.map((skill) => (
                       <li key={skill}>
-                        <CheckCircle2 size={14} className="skill-check" />
+                        <CheckCircle2 size={13} className="skill-check" />
                         <span>{skill}</span>
                       </li>
                     ))}
@@ -710,7 +764,7 @@ export default function App() {
                         rel="noreferrer"
                         className="project-action-button live-button"
                       >
-                        <ExternalLink size={16} />
+                        <ExternalLink size={15} />
                         Visit Live
                       </a>
                     ) : (
@@ -723,7 +777,7 @@ export default function App() {
                         rel="noreferrer"
                         className="project-action-button github-button"
                       >
-                        <Github size={16} />
+                        <Github size={15} />
                         Source Code
                       </a>
                     ) : null}
@@ -756,7 +810,7 @@ export default function App() {
                     className="contact-card-item"
                   >
                     <div className="contact-card-icon">
-                      <Icon size={19} />
+                      <Icon size={18} />
                     </div>
                     <div className="contact-card-details">
                       <strong>{link.label}</strong>
@@ -765,7 +819,7 @@ export default function App() {
                         <small className="contact-card-subtext">{link.subtext}</small>
                       ) : null}
                     </div>
-                    <ArrowUpRight size={17} className="contact-arrow" />
+                    <ArrowUpRight size={15} className="contact-arrow" />
                   </a>
                 );
               })}
@@ -812,7 +866,7 @@ export default function App() {
                   value={formState.message}
                   onChange={updateField}
                   minLength="10"
-                  rows="5"
+                  rows="4"
                   required
                 />
               </label>
@@ -822,13 +876,13 @@ export default function App() {
                 type="submit"
                 disabled={formStatus.type === "loading"}
               >
-                <Send size={18} />
+                <Send size={16} />
                 {formStatus.type === "loading" ? "Sending..." : "Send Message"}
               </button>
 
               {formStatus.message ? (
                 <div className={`form-status ${formStatus.type}`} role="status">
-                  <CheckCircle2 size={16} />
+                  <CheckCircle2 size={15} />
                   <span>{formStatus.message}</span>
                 </div>
               ) : null}
@@ -844,7 +898,12 @@ export default function App() {
           <span>Full Stack Developer & Managing Director</span>
         </div>
         <div className="footer-right">
-          <span>© 2026 Muhammad Ahmad. All rights reserved.</span>
+          <a href={profile.github} target="_blank" rel="noreferrer">
+            GitHub (ItsMrAhmad)
+          </a>
+          <a href={profile.linkedin} target="_blank" rel="noreferrer">
+            LinkedIn
+          </a>
           <a href={profile.companyUrl} target="_blank" rel="noreferrer">
             techsistlabs.com
           </a>
