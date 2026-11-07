@@ -34,22 +34,21 @@ import {
 
 const profile = {
   name: "Muhammad Ahmad",
-  role: "Full Stack Developer & Managing Director",
+  role: "Founder & CEO at Techsist Labs | Full Stack Developer",
   company: "Techsist Labs",
-  companyLocation: "Brisbane, Australia",
+  companyLocation: "Lahore, Pakistan",
   companyUrl: "https://techsistlabs.com",
   tagline:
-    "Managing Director (Remote) at Techsist Labs & Full Stack Developer engineering scalable, high-performance web products and cloud solutions.",
+    "Founder & CEO of Techsist Labs (Lahore, Pakistan) & Full Stack Developer engineering scalable, high-performance web products and cloud solutions.",
   location: "Lahore, Pakistan",
   timezone: "PKT (GMT+5)",
   email: "me.ahmadasghar@gmail.com",
-  secondaryEmail: "me@ahmadasghar.com",
   phone: "+92 324 9387047",
   github: "https://github.com/ItsMrAhmad",
   linkedin: "https://www.linkedin.com/in/muhammad-ahmad025/",
   website: "https://its-mr-ahmad.vercel.app",
   about:
-    "Full Stack Developer and Managing Director at Techsist Labs (Brisbane, Australia), working remotely from Lahore, Pakistan. BSCS graduate from Lahore Garrison University with extensive experience building production-grade web applications, responsive user interfaces, modular REST APIs, and resilient database architectures. Focused on delivering high-impact digital solutions that combine modern engineering standards with exceptional user experiences.",
+    "Founder & CEO of Techsist Labs, based in Lahore, Pakistan. Full Stack Developer and BSCS graduate from Lahore Garrison University with extensive experience building production-grade web applications, responsive user interfaces, modular REST APIs, and resilient database architectures. Focused on delivering high-impact digital solutions that combine modern engineering standards with exceptional user experiences.",
   education: "Bachelor of Science in Computer Science (BSCS) — Lahore Garrison University"
 };
 
@@ -63,9 +62,9 @@ const navItems = [
 
 const experienceList = [
   {
-    role: "Managing Director (Remote) & Full Stack Lead",
+    role: "Founder & CEO",
     company: "Techsist Labs",
-    location: "Brisbane, Australia (Remote)",
+    location: "Lahore, Pakistan",
     url: "https://techsistlabs.com",
     period: "May 2026 – Present",
     type: "Leadership & Engineering",
@@ -81,16 +80,6 @@ const experienceList = [
     type: "Support & Development",
     description:
       "Managed customer support and client communications while developing technical web solutions, internal operational tools, and automated customer service workflows for SMP Solutions Inc."
-  },
-  {
-    role: "Full Stack Web Developer (Freelance)",
-    company: "Independent Client Deliveries",
-    location: "Remote / International",
-    url: "",
-    period: "2024 – Present",
-    type: "Freelance",
-    description:
-      "Built custom full-stack solutions using the MERN stack, Next.js, and modern CSS/Tailwind frameworks. Developed REST APIs, third-party service integrations, and customized dashboard architectures."
   },
   {
     role: "BS Computer Science (16 Years of Education)",
@@ -158,98 +147,73 @@ const skillGroups = [
 
 const projects = [
   {
+    id: "techsist",
     name: "Techsist Labs",
     tagline: "Digital Studio & Technology Firm",
+    badge: "Featured Digital Studio",
+    roleBadge: "Founder & CEO",
     description:
-      "Full-service digital studio based in Brisbane, Australia. Engineered bespoke web applications, Next.js architecture, AI automations, and scalable cloud solutions for high-growth global clients.",
-    tech: ["Next.js", "React", "Tailwind CSS", "Cloudflare", "AWS", "UI/UX"],
+      "Full-service digital studio based in Lahore, Pakistan. Engineering bespoke web applications, high-performance Next.js architectures, AI automations, and scalable cloud solutions for global clients.",
+    tech: ["Next.js", "React", "Tailwind CSS", "Cloudflare", "AWS", "AI Automations", "UI/UX"],
     status: "Live",
-    highlight: "Featured Agency",
     live: "https://techsistlabs.com",
-    github: ""
+    metrics: [
+      { label: "Leadership", value: "Founder & CEO" },
+      { label: "Core Stack", value: "Next.js · AWS · Cloudflare" },
+      { label: "Client Base", value: "Global Operations" }
+    ],
+    features: [
+      "Bespoke High-Performance Web Applications",
+      "Next.js App Router & Cloudflare Edge Deployment",
+      "Custom AI Workflow & Cloud Integrations",
+      "Executive Technical Direction & Architecture"
+    ]
   },
   {
-    name: "Virtual Stack",
-    tagline: "Enterprise Outsourced Care & Operations",
+    id: "socialsilico",
+    name: "SocialSilico",
+    tagline: "Social Media Manager & Automation Suite",
+    badge: "SaaS Platform",
+    domain: "socialsilico.pages.dev",
+    customDomain: "socialsilico.com",
     description:
-      "Enterprise customer care and back-office digital platform operating with 200+ workstation capacity 24/7/365, delivering high-reliability operational solutions.",
-    tech: ["Full Stack", "Web Development", "UI/UX", "Workflow Systems"],
+      "All-in-one social media management platform to schedule, publish, and analyze content across Twitter/X, Facebook, Instagram, and LinkedIn with unified metrics and multi-account workflows.",
+    tech: ["React", "Node.js", "Express.js", "Cloudflare Pages", "REST APIs", "Analytics"],
     status: "Live",
-    highlight: "Enterprise Client",
+    live: "https://socialsilico.pages.dev/",
+    accent: "saas"
+  },
+  {
+    id: "dotmatic",
+    name: "DotMatic Printing & Packaging",
+    tagline: "Custom Printing & Packaging Solutions",
+    badge: "Manufacturing & Commerce",
+    domain: "dotmaticprinter.com",
+    description:
+      "Commercial printing and custom packaging digital platform featuring corrugated mailer boxes, luxury rigid packaging, custom merchandise, dynamic quoting, and direct factory workflows.",
+    tech: ["Full Stack", "Responsive UI/UX", "Product Catalog", "Workflow Systems"],
+    status: "Live",
+    live: "https://dotmaticprinter.com",
+    accent: "commerce"
+  },
+  {
+    id: "virtualstack",
+    name: "VirtualStack",
+    tagline: "B2B Outsourcing, Support & Infrastructure",
+    badge: "Enterprise Operations",
+    domain: "virtualstack.us",
+    description:
+      "Enterprise customer care and back-office digital platform operating 24/7/365 with 200+ workstation capacity, high-reliability SLA tracking, and digital delivery workflows.",
+    tech: ["Full Stack", "Enterprise Systems", "Operations Platform", "UI/UX"],
+    status: "Live",
     live: "https://virtualstack.us",
-    github: ""
-  },
-  {
-    name: "Crypto Class",
-    tagline: "Crypto Education & Learning Platform",
-    description:
-      "Interactive crypto learning platform crafted with clean UI and structured lessons for mastering cryptocurrency fundamentals and blockchain concepts.",
-    tech: ["MongoDB", "Express.js", "React", "Node.js"],
-    status: "Live",
-    highlight: "EdTech",
-    live: "https://crypto-class.vercel.app/",
-    github: "https://github.com/ItsMrAhmad/CryptoClass"
-  },
-  {
-    name: "Habit Tracker",
-    tagline: "Daily Routine & Consistency Platform",
-    description:
-      "A goal-driven productivity application where users monitor daily habits, streak metrics, and maintain personal consistency over time.",
-    tech: ["MongoDB", "Express.js", "React", "Node.js"],
-    status: "Live",
-    highlight: "Productivity",
-    live: "https://habit-tracker-kohl-six.vercel.app/",
-    github: "https://github.com/ItsMrAhmad/HabitTracker"
-  },
-  {
-    name: "NodeMailer Email API",
-    tagline: "Email Dispatch Microservice",
-    description:
-      "Secure and lightweight email dispatch microservice built with Node.js, Express, and Nodemailer with CORS authorization and API key safeguards.",
-    tech: ["Node.js", "Express.js", "Nodemailer", "REST API", "Vercel"],
-    status: "Live",
-    highlight: "Microservice",
-    live: "https://node-mailer-email-api.vercel.app",
-    github: "https://github.com/ItsMrAhmad/NodeMailer-Email-API"
-  },
-  {
-    name: "Weather Web App",
-    tagline: "Live Meteorological Forecast Application",
-    description:
-      "Responsive weather web application providing real-time conditions, multi-day forecasts, atmospheric pressure, and humidity for any city worldwide.",
-    tech: ["React.js", "Weather API", "CSS Grid", "Vite"],
-    status: "Live",
-    highlight: "Weather App",
-    live: "https://weather-app-sigma-eosin-84.vercel.app/",
-    github: "https://github.com/ItsMrAhmad/WeatherApp"
-  },
-  {
-    name: "FIA Test Preparation",
-    tagline: "Competitive Exam Preparation Portal",
-    description:
-      "Interactive quiz and preparation system with question banks, time-based mock exams, and instant score analysis for competitive test candidates.",
-    tech: ["HTML5", "CSS3", "JavaScript", "Vercel"],
-    status: "Live",
-    highlight: "Exam Portal",
-    live: "https://fiabyahmad.vercel.app",
-    github: "https://github.com/ItsMrAhmad/Fia-test-preparation"
-  },
-  {
-    name: "SocialBee",
-    tagline: "Social Media Workflow Suite",
-    description:
-      "Comprehensive multi-account social media management platform designed for post scheduling, audience analytics, and brand workflow automation.",
-    tech: ["MongoDB", "Express.js", "React", "Node.js"],
-    status: "In Development",
-    highlight: "SaaS Platform",
-    live: "",
-    github: "https://github.com/ItsMrAhmad/SocialBee"
+    accent: "enterprise"
   }
 ];
 
 const stats = [
   { value: "Full Stack", label: "Core Specialization" },
-  { value: "Director", label: "Techsist Labs" },
+  { value: "Founder & CEO", label: "Techsist Labs" },
   { value: "BSCS", label: "Computer Science" },
   { value: "3+ Years", label: "Professional Exp" }
 ];
@@ -284,14 +248,7 @@ export default function App() {
         value: profile.email,
         href: `mailto:${profile.email}`,
         icon: Mail,
-        subtext: "Best for direct replies"
-      },
-      {
-        label: "Domain Email",
-        value: profile.secondaryEmail,
-        href: `mailto:${profile.secondaryEmail}`,
-        icon: Mail,
-        subtext: "Business inquiries"
+        subtext: "Best for direct replies & project inquiries"
       },
       {
         label: "LinkedIn",
@@ -319,7 +276,7 @@ export default function App() {
         value: "techsistlabs.com",
         href: profile.companyUrl,
         icon: Globe,
-        subtext: "Techsist Labs (Brisbane)"
+        subtext: "Techsist Labs (Lahore)"
       }
     ],
     []
@@ -355,16 +312,27 @@ export default function App() {
         body: JSON.stringify(formState)
       });
 
-      const result = await response.json();
+      const contentType = response.headers.get("content-type") || "";
+      let result = null;
 
-      if (!response.ok) {
-        throw new Error(result.message || "Message could not be sent.");
+      if (contentType.includes("application/json")) {
+        result = await response.json();
+      } else {
+        const text = await response.text();
+        if (!response.ok) {
+          throw new Error("API service returned an unexpected response. Please reach out via direct email below.");
+        }
+        result = { success: true, message: "Message sent successfully!" };
+      }
+
+      if (!response.ok || (result && result.success === false)) {
+        throw new Error(result?.message || "Message could not be sent.");
       }
 
       setFormState({ name: "", email: "", message: "" });
       setFormStatus({
         type: "success",
-        message: "Message sent successfully! I will get back to you shortly."
+        message: result?.message || "Message sent successfully! I will get back to you shortly."
       });
     } catch (error) {
       setFormStatus({
@@ -526,7 +494,7 @@ export default function App() {
 
           <div className="hero-visual" aria-label="Portrait of Muhammad Ahmad">
             <div className="portrait-frame">
-              <img src="/muhammad-ahmad-profile.png" alt="Muhammad Ahmad wearing a black suit" />
+              <img src="/muhammad-ahmad-profile.jpg" alt="Muhammad Ahmad - Founder & CEO of Techsist Labs" />
               <div className="portrait-backdrop-glow" />
             </div>
             <div className="availability-pill">
@@ -574,16 +542,16 @@ export default function App() {
                 <Building2 size={22} className="exec-icon" />
                 <div>
                   <h3>Techsist Labs</h3>
-                  <span className="exec-badge">Managing Director</span>
+                  <span className="exec-badge">Founder & CEO</span>
                 </div>
               </div>
               <p className="exec-text">
-                Serving as Managing Director (remotely) for Techsist Labs in Brisbane, Australia.
+                Serving as Founder & CEO of Techsist Labs in Lahore, Pakistan.
                 Leading digital solutions, Next.js engineering, client roadmaps, and full-stack software
                 delivery.
               </p>
               <div className="exec-footer">
-                <span className="exec-time">May 2026 – Present · Brisbane, Australia</span>
+                <span className="exec-time">May 2026 – Present · Lahore, Pakistan</span>
                 <a
                   href={profile.companyUrl}
                   target="_blank"
@@ -701,90 +669,165 @@ export default function App() {
           </div>
         </section>
 
-        {/* PROJECTS SECTION */}
+        {/* PROJECTS SECTION - MODERN BENTO GRID */}
         <section className="section-pad content-section" id="projects">
           <div className="section-heading wide-heading">
             <span className="section-kicker">Portfolio & Showcase</span>
             <h2>Selected projects & production deployments.</h2>
             <p className="section-subtext">
               A curated selection of live client projects, digital platforms, full-stack web applications,
-              and developer microservices.
+              and enterprise systems.
             </p>
           </div>
 
-          <div className="projects-grid">
-            {projects.map((project) => (
-              <article className="project-card" key={project.name}>
-                <div className="project-preview" aria-hidden="true">
-                  <div className="preview-bar">
-                    <span className="preview-dot red" />
-                    <span className="preview-dot yellow" />
-                    <span className="preview-dot green" />
-                    <span className="preview-title">{project.name}</span>
-                  </div>
-                  <div className="preview-content">
-                    <span className="preview-tagline">{project.tagline}</span>
-                    <div className="preview-status-wrap">
-                      {project.status === "Live" ? (
-                        <span className="status-badge status-live">
-                          <span className="pulsing-dot-small" />
-                          Live Application
-                        </span>
-                      ) : (
-                        <span className="status-badge status-dev">
-                          {project.status}
-                        </span>
-                      )}
-                      {project.highlight ? (
-                        <span className="highlight-pill">{project.highlight}</span>
-                      ) : null}
-                    </div>
-                  </div>
+          <div className="bento-grid">
+            {/* FEATURED 2-COLUMN FLAGSHIP CARD: TECHSIST LABS */}
+            <article className="bento-card bento-card-featured">
+              <div className="bento-card-topbar">
+                <div className="bento-pill-group">
+                  <span className="status-badge status-live">
+                    <span className="pulsing-dot-small" />
+                    Live Digital Studio
+                  </span>
+                  <span className="bento-highlight-pill">{projects[0].roleBadge}</span>
                 </div>
+                <a
+                  href={projects[0].live}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="bento-top-link"
+                  title="Visit techsistlabs.com"
+                >
+                  <span>techsistlabs.com</span>
+                  <ArrowUpRight size={15} />
+                </a>
+              </div>
 
-                <div className="project-body">
-                  <div className="project-main-info">
-                    <div className="project-header-row">
-                      <h3>{project.name}</h3>
+              <div className="bento-featured-body">
+                <div className="bento-featured-main">
+                  <div className="bento-title-row">
+                    <div className="bento-icon-wrapper">
+                      <Building2 size={24} />
                     </div>
-                    <p>{project.description}</p>
+                    <div>
+                      <h3>{projects[0].name}</h3>
+                      <p className="bento-tagline">{projects[0].tagline}</p>
+                    </div>
                   </div>
 
-                  <div className="tech-list">
-                    {project.tech.map((tech) => (
-                      <span key={`${project.name}-${tech}`}>{tech}</span>
+                  <p className="bento-description">{projects[0].description}</p>
+
+                  <div className="bento-metrics-strip">
+                    {projects[0].metrics.map((m) => (
+                      <div key={m.label} className="bento-metric-item">
+                        <span className="bento-metric-val">{m.value}</span>
+                        <span className="bento-metric-lbl">{m.label}</span>
+                      </div>
                     ))}
                   </div>
 
-                  <div className="project-links">
-                    {project.live ? (
-                      <a
-                        href={project.live}
-                        target="_blank"
-                        rel="noreferrer"
-                        className="project-action-button live-button"
-                      >
-                        <ExternalLink size={15} />
-                        Visit Live
-                      </a>
-                    ) : (
-                      <span className="muted-link">Private In-Progress</span>
-                    )}
-                    {project.github ? (
-                      <a
-                        href={project.github}
-                        target="_blank"
-                        rel="noreferrer"
-                        className="project-action-button github-button"
-                      >
-                        <Github size={15} />
-                        Source Code
-                      </a>
-                    ) : null}
+                  <div className="tech-list bento-tech-list">
+                    {projects[0].tech.map((t) => (
+                      <span key={t}>{t}</span>
+                    ))}
+                  </div>
+
+                  <div className="bento-actions">
+                    <a
+                      href={projects[0].live}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="button button-primary bento-action-btn"
+                    >
+                      <Globe size={16} />
+                      Visit techsistlabs.com
+                      <ArrowUpRight size={14} />
+                    </a>
                   </div>
                 </div>
-              </article>
-            ))}
+
+                <div className="bento-featured-aside">
+                  <div className="bento-mockup-window">
+                    <div className="mockup-header">
+                      <span className="preview-dot red" />
+                      <span className="preview-dot yellow" />
+                      <span className="preview-dot green" />
+                      <span className="mockup-domain">techsistlabs.com</span>
+                    </div>
+                    <div className="mockup-body">
+                      <span className="mockup-kicker">ENGINEERING CAPABILITIES</span>
+                      <ul className="mockup-feature-list">
+                        {projects[0].features.map((feature, idx) => (
+                          <li key={idx}>
+                            <CheckCircle2 size={13} className="mockup-check-icon" />
+                            <span>{feature}</span>
+                          </li>
+                        ))}
+                      </ul>
+                      <div className="mockup-status-footer">
+                        <span className="mockup-status-dot" />
+                        <span>Production · SSL Secured · Edge Routed</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            {/* THREE ASYMMETRIC TILES: SOCIALSILICO, DOTMATIC, VIRTUALSTACK */}
+            <div className="bento-subgrid">
+              {projects.slice(1).map((project) => (
+                <article
+                  key={project.id}
+                  className={`bento-card bento-subcard bento-${project.accent}`}
+                >
+                  <div className="bento-card-topbar">
+                    <span className="status-badge status-live">
+                      <span className="pulsing-dot-small" />
+                      Live Application
+                    </span>
+                    <span className="bento-badge-accent">{project.badge}</span>
+                  </div>
+
+                  <div className="bento-subcard-body">
+                    <div className="bento-subcard-header">
+                      <h3>{project.name}</h3>
+                      <p className="bento-subcard-tagline">{project.tagline}</p>
+                      {project.domain ? (
+                        <div className="bento-domain-bar">
+                          <Globe size={12} />
+                          <code>{project.domain}</code>
+                          {project.customDomain ? (
+                            <span className="custom-domain-chip">{project.customDomain}</span>
+                          ) : null}
+                        </div>
+                      ) : null}
+                    </div>
+
+                    <p className="bento-subcard-desc">{project.description}</p>
+
+                    <div className="tech-list bento-tech-list">
+                      {project.tech.map((t) => (
+                        <span key={t}>{t}</span>
+                      ))}
+                    </div>
+                  </div>
+
+                  <div className="bento-subcard-footer">
+                    <a
+                      href={project.live}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="button button-outline bento-tile-btn"
+                    >
+                      <ExternalLink size={14} />
+                      Launch Platform
+                      <ArrowUpRight size={13} />
+                    </a>
+                  </div>
+                </article>
+              ))}
+            </div>
           </div>
         </section>
 
@@ -865,7 +908,6 @@ export default function App() {
                   placeholder="Tell me about your project scope, goals, or timeline..."
                   value={formState.message}
                   onChange={updateField}
-                  minLength="10"
                   rows="4"
                   required
                 />
@@ -884,6 +926,17 @@ export default function App() {
                 <div className={`form-status ${formStatus.type}`} role="status">
                   <CheckCircle2 size={15} />
                   <span>{formStatus.message}</span>
+                  {formStatus.type === "error" ? (
+                    <div style={{ marginTop: "8px" }}>
+                      <a
+                        href={`mailto:${profile.email}?subject=${encodeURIComponent("Portfolio Inquiry from " + (formState.name || "Visitor"))}&body=${encodeURIComponent(formState.message || "")}`}
+                        className="button button-secondary"
+                        style={{ fontSize: "0.82rem", padding: "6px 14px" }}
+                      >
+                        <Mail size={14} /> Send via Direct Email
+                      </a>
+                    </div>
+                  ) : null}
                 </div>
               ) : null}
             </form>
@@ -895,7 +948,7 @@ export default function App() {
         <div className="footer-left">
           <span className="footer-brand">Muhammad Ahmad</span>
           <span className="footer-divider">·</span>
-          <span>Full Stack Developer & Managing Director</span>
+          <span>Full Stack Developer</span>
         </div>
         <div className="footer-right">
           <a href={profile.github} target="_blank" rel="noreferrer">

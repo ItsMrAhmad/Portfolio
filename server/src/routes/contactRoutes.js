@@ -13,7 +13,7 @@ router.post("/", async (request, response) => {
   const email = String(request.body.email || "").trim().toLowerCase();
   const message = String(request.body.message || "").trim();
 
-  if (name.length < 2 || message.length < 10 || !isValidEmail(email)) {
+  if (name.length < 2 || message.length < 1 || !isValidEmail(email)) {
     return response.status(400).json({
       success: false,
       message: "Please provide a valid name, email, and message."
@@ -40,4 +40,3 @@ router.post("/", async (request, response) => {
 });
 
 export default router;
-

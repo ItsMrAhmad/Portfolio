@@ -20,7 +20,7 @@ const contactMessageSchema = new mongoose.Schema(
       type: String,
       required: true,
       trim: true,
-      minlength: 10,
+      minlength: 1,
       maxlength: 2000
     }
   },
@@ -28,4 +28,3 @@ const contactMessageSchema = new mongoose.Schema(
 );
 
 export default mongoose.model("ContactMessage", contactMessageSchema);
-
