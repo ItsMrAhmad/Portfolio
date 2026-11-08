@@ -16,7 +16,16 @@ export default async function handler(req, res) {
   }
 
   try {
-    const { name = "", email = "", message = "" } = req.body || {};
+    let body = req.body;
+    if (typeof body === "string") {
+      try {
+        body = JSON.parse(body);
+      } catch (e) {
+        body = {};
+      }
+    }
+
+    const { name = "", email = "", message = "" } = body || {};
     const trimmedName = String(name).trim();
     const trimmedEmail = String(email).trim().toLowerCase();
     const trimmedMessage = String(message).trim();

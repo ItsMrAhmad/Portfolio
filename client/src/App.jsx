@@ -937,18 +937,17 @@ export default function App() {
 
               {formStatus.message ? (
                 <div className={`form-status ${formStatus.type}`} role="status">
-                  <CheckCircle2 size={15} />
-                  <span>{formStatus.message}</span>
+                  <div className="form-status-content">
+                    <CheckCircle2 size={16} className="form-status-icon" />
+                    <span>{formStatus.message}</span>
+                  </div>
                   {formStatus.type === "error" ? (
-                    <div style={{ marginTop: "8px" }}>
-                      <a
-                        href={`mailto:${profile.email}?subject=${encodeURIComponent("Portfolio Inquiry from " + (formState.name || "Visitor"))}&body=${encodeURIComponent(formState.message || "")}`}
-                        className="button button-secondary"
-                        style={{ fontSize: "0.82rem", padding: "6px 14px" }}
-                      >
-                        <Mail size={14} /> Send via Direct Email
-                      </a>
-                    </div>
+                    <a
+                      href={`mailto:${profile.email}?subject=${encodeURIComponent("Portfolio Inquiry from " + (formState.name || "Visitor"))}&body=${encodeURIComponent(formState.message || "")}`}
+                      className="button button-secondary form-status-fallback"
+                    >
+                      <Mail size={14} /> Send via Direct Email
+                    </a>
                   ) : null}
                 </div>
               ) : null}
