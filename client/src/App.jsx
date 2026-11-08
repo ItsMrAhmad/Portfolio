@@ -184,6 +184,19 @@ const projects = [
     accent: "saas"
   },
   {
+    id: "techsilico",
+    name: "TechSilico",
+    tagline: "Consumer Tech Publications & Buying Guides",
+    badge: "Tech Publishing & Media",
+    domain: "techsilico.com",
+    description:
+      "Modern digital tech publication delivering data-grounded gadget comparisons, buying guides, and instrumented benchmark analyses built with Next.js and Cloudflare edge delivery.",
+    tech: ["Next.js", "React", "Cloudflare", "Tailwind CSS", "Technical SEO", "Edge Architecture"],
+    status: "Live",
+    live: "https://techsilico.com",
+    accent: "publishing"
+  },
+  {
     id: "dotmatic",
     name: "DotMatic Printing & Packaging",
     tagline: "Custom Printing & Packaging Solutions",

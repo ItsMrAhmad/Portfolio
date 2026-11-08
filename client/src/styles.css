@@ -1614,10 +1614,10 @@ button {
   box-shadow: 0 0 6px #10b981;
 }
 
-/* Three Asymmetric Tiles Subgrid */
+/* Bento Tiles Subgrid (2x2 Grid) */
 .bento-subgrid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 22px;
 }
 
@@ -1642,6 +1642,12 @@ button {
   background: rgba(6, 182, 212, 0.15);
   color: #38bdf8;
   border: 1px solid rgba(6, 182, 212, 0.35);
+}
+
+.bento-publishing .bento-badge-accent {
+  background: rgba(16, 185, 129, 0.15);
+  color: #34d399;
+  border: 1px solid rgba(16, 185, 129, 0.35);
 }
 
 .bento-commerce .bento-badge-accent {
